@@ -5,9 +5,12 @@
 }
 
 .background {
-  background-color: #f9f9f8;
-  position: sticky;
-  top: 0;
+  background-color: #f3f0ff;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
   z-index: 1000;
 }
 .background .control {
@@ -38,20 +41,14 @@
 }
 .background .control .services a {
   text-decoration: none;
-  color: black;
+  color: #515158;
 }
-.background .control .phoneHeader {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
-}
-.background .control .phoneHeader h1 {
-  font-size: 24px;
-  font-weight: 600;
-}
-.background .control .phoneHeader h2 {
-  font-size: 18px;
+.background .control .buttonClass {
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #524FD5;
 }
 .background .control .hamburger {
   display: flex;
@@ -71,23 +68,20 @@
 }
 .background .overlay .services a {
   text-decoration: none;
-  color: black;
+  color: #515158;
   padding-bottom: 15px;
   padding-top: 15px;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid rgb(93, 107, 231);
 }
-.background .overlay .icons {
-  display: flex;
-  gap: 20px;
+.background .overlay .buttonClass {
+  text-decoration: none;
+  color: #515158;
   padding-bottom: 15px;
   padding-top: 15px;
-  border-bottom: 1px solid gray;
-}
-.background .overlay .icons svg {
-  width: 20px;
-  height: 20px;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 @media (min-width: 768px) {

@@ -1,84 +1,46 @@
-import React, { useState } from "react";
-import styles from "./index.module.css";
-import { RightArrow } from "../../icons/";
-import ScrollTrigger from "react-scroll-trigger";
-import CountUp from "react-countup";
-import Wrapper from "../UI/wrapper";
-import { Link } from "react-router-dom";
-
+import React from 'react'
+import styles from './index.module.css'
+import { Link } from 'react-router-dom'
+import Logo1 from "../../assets/images/logo1.png"
+import Logo2 from "../../assets/images/logo2.png"
+import Logo3 from "../../assets/images/logo3.png"
 const Hero = () => {
-  const [counterOn, setCounterOn] = useState(false);
-  return (
-    <>
+    const data=[
+        {
+            img:Logo1,
+            title:"Danışıq Klubu",
+            description:"Salam Necesen jdnasjdn ijdsnf jasfndj  ais"
+        },
+        {
+            img:Logo2,
+            title:"Danışıq Klubu",
+            description:"Salam Necesen jdnasjdn ijdsnf jasfndj  ais"
+        },
+        {
+            img:Logo3,
+            title:"Danışıq Klubu",
+            description:"Salam Necesen jdnasjdn ijdsnf jasfndj  ais"
+        },
+    ]
+    return (
+        <div className={styles.background}>
+            <div className={styles.header}>
 
-    <div className={styles.background}>
-      <Wrapper>
-
-     
-      <div className={styles.texts}>
-        <>
-        <h2>Aradığınız Sağlık Sağlıklı Gelecek</h2>
-     
-        <h2>Her anınızda yanınızdayız</h2>
-        </>
-      </div>
-      <div className={styles.control}>
-        <div className={styles.leftside}>
-          <div className={styles.line1}>
-            <h2>
-            Alanında uzman sağlık ekibimizle rahat bir nefes alın.
-            </h2>
-          </div>
-          <div className={styles.line2}>
-          <a href="tel:+905434063544">0543 406 35 44</a>
-            <div className={styles.icons}>
-              <Link to={"/kifoz"}>Hizmetlerimiz</Link>
-              <RightArrow />
+              <h2>Bizim dəyərlərimiz</h2>  
+             
             </div>
-          </div>
-          <ScrollTrigger
-            onEnter={() => setCounterOn(true)}
-            onExit={() => setCounterOn(false)}
-          >
-            <div className={styles.line3}>
-              <div className={styles.controlemergency}>
-
-              <div className={styles.emergency}>
-                <div className={styles.emergencynumber}>
-                  <h2>
-                    {counterOn && <CountUp duration={4} delay={0} end={24} />}/
-                  </h2>
-                  <h2>
-                    {counterOn && <CountUp duration={4} delay={0} end={7} />}
-                  </h2>
+                <div className={styles.datas}>
+                    {data.map((item,index)=>(
+                        <div key={index} className={styles.card}>
+                            <img src={item.img} alt="logo" className={styles.logo}/>
+                            <h2>{item.title}</h2>
+                            <p>{item.description}</p>
+                            <Link to="/about" className={styles.link}>Daha ətraflı</Link>  
+                        </div>  
+                   ))}
                 </div>
-                <div className={styles.emergencytext}>
-                  <h2>Emergency Care</h2>
-                </div>
-              </div>
-              <div className={styles.emergency}>
-                <div className={styles.emergencynumber}>
-                  <h2>
-                    {counterOn && <CountUp duration={4} delay={0} end={98} />}%
-                  </h2>
-               
-                </div>
-                <div className={styles.emergencytext}>
-                  <h2>Client Satisfaction</h2>
-                </div>
-              </div>
-              </div>
-            </div>
-          </ScrollTrigger>
         </div>
-   
-      </div>
-      </Wrapper>
+    )
+}
 
-    </div>
-    </>
-
-  );
-};
-
-export default React.memo(Hero);
+export default Hero

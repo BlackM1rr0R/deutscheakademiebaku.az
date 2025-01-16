@@ -1,216 +1,89 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.background .header {
-  display: flex;
-  justify-content: center;
-  padding-top: 40px;
-}
-.background .header h2 {
-  font-weight: 600;
-  font-size: 32px;
-}
-.background .control {
-  padding-top: 50px;
-  padding-bottom: 50px;
+.controlSide {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 17px;
-}
-.background .control .border1 {
-  width: 100%;
-  background-color: #dfeed7;
-  border-radius: 10px;
-}
-.background .control .border1 .bordertext1 {
-  padding: 44px 97px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 15px;
-  text-align: center;
   align-items: center;
-  color: #439a75;
-  font-weight: 600;
+  justify-content: space-between;
+  background-color: #f3f0ff;
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-.background .control .border1 .bordertext1 h2 {
-  font-size: 32px;
-}
-.background .control .border1 .bordertext1 p {
-  font-size: 20px;
-}
-.background .control .border2 {
-  background-color: #e6deeb;
-  width: 100%;
-  border-radius: 10px;
-}
-.background .control .border2 .bordertext2 {
-  padding: 44px 97px;
+.controlSide .leftSide {
+  padding-left: 20px;
   display: flex;
-  gap: 15px;
-  text-align: center;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #9b8dd4;
-  font-weight: 600;
+  gap: 50px;
 }
-.background .control .border2 .bordertext2 h2 {
-  font-size: 32px;
-}
-.background .control .border2 .bordertext2 p {
-  font-size: 20px;
-}
-.background .control .border3 {
-  background-color: #f9e8d6;
-  width: 100%;
-  border-radius: 10px;
-}
-.background .control .border3 .bordertext3 {
-  padding: 44px 97px;
+.controlSide .leftSide h2 {
+  font-size: 48px;
   display: flex;
-  gap: 15px;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #ed8e61;
-  font-weight: 600;
-}
-.background .control .border3 .bordertext3 h2 {
-  font-size: 32px;
-}
-.background .control .border3 .bordertext3 p {
-  font-size: 20px;
-}
-.background .control .border4 {
-  background-color: #dfeed7;
+  flex-wrap: wrap;
   width: 100%;
-  border-radius: 10px;
-}
-.background .control .border4 .bordertext4 {
-  padding: 44px 97px;
-  text-align: center;
-  display: flex;
-  gap: 15px;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  color: #439a75;
+  gap: 8px;
   font-weight: 600;
 }
-.background .control .border4 .bordertext4 h2 {
-  font-size: 32px;
+.controlSide .leftSide h2 h3 {
+  color: #524FD5;
+  font-weight: 600;
 }
-.background .control .border4 .bordertext4 p {
-  font-size: 20px;
+.controlSide .leftSide p {
+  width: 100%;
+  color: #515158;
+  line-height: 26px;
+}
+.controlSide .leftSide a {
+  width: 130px;
+  background-color: #524FD5;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.controlSide .rightSide {
+  display: flex;
+}
+.controlSide .rightSide img {
+  width: 100%;
 }
 
 @media (min-width: 768px) {
-  .background .header {
+  .controlSide {
     display: flex;
-    justify-content: center;
-    padding-top: 70px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
   }
-  .background .header h2 {
-    font-weight: 600;
-    font-size: 32px;
+  .controlSide .leftSide {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
   }
-  .background .control {
-    padding-top: 50px;
-    padding-bottom: 50px;
+  .controlSide .leftSide h2 {
+    font-size: 48px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    gap: 17px;
-  }
-  .background .control .border1 {
-    width: 33%;
-    background-color: #dfeed7;
-    border-radius: 10px;
-  }
-  .background .control .border1 .bordertext1 {
-    padding: 88px 137px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 15px;
+    width: 700px;
     align-items: center;
-    color: #439a75;
+    gap: 8px;
     font-weight: 600;
   }
-  .background .control .border1 .bordertext1 h2 {
-    font-size: 32px;
-  }
-  .background .control .border1 .bordertext1 p {
-    font-size: 20px;
-  }
-  .background .control .border2 {
-    background-color: #e6deeb;
-    width: 33%;
-    border-radius: 10px;
-  }
-  .background .control .border2 .bordertext2 {
-    padding: 88px 137px;
-    display: flex;
-    gap: 15px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #9b8dd4;
+  .controlSide .leftSide h2 h3 {
+    color: #524FD5;
     font-weight: 600;
   }
-  .background .control .border2 .bordertext2 h2 {
-    font-size: 32px;
+  .controlSide .leftSide p {
+    width: 250px;
+    color: #515158;
+    line-height: 26px;
   }
-  .background .control .border2 .bordertext2 p {
-    font-size: 20px;
-  }
-  .background .control .border3 {
-    background-color: #f9e8d6;
-    width: 33%;
-    border-radius: 10px;
-  }
-  .background .control .border3 .bordertext3 {
-    padding: 88px 137px;
-    display: flex;
-    gap: 15px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #ed8e61;
-    font-weight: 600;
-  }
-  .background .control .border3 .bordertext3 h2 {
-    font-size: 32px;
-  }
-  .background .control .border3 .bordertext3 p {
-    font-size: 20px;
-  }
-  .background .control .border4 {
-    background-color: #dfeed7;
-    width: 33%;
-    border-radius: 10px;
-  }
-  .background .control .border4 .bordertext4 {
-    padding: 88px 137px;
-    display: flex;
-    gap: 15px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #439a75;
-    font-weight: 600;
-  }
-  .background .control .border4 .bordertext4 h2 {
-    font-size: 32px;
-  }
-  .background .control .border4 .bordertext4 p {
-    font-size: 20px;
+  .controlSide .leftSide a {
+    width: 130px;
+    background-color: #524FD5;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
   }
 }/*# sourceMappingURL=index.module.css.map */

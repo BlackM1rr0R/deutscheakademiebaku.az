@@ -4,271 +4,130 @@
   box-sizing: border-box;
 }
 
-.background .headerControl {
-  padding-top: 10px;
+.background {
+  margin-bottom: 30px;
+  background-color: #f3f0ff;
+  border-radius: 20px;
+  padding: 40px 20px;
+}
+.background .headerContact h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #524FD5;
+  padding-left: 10px;
+}
+.background .headers {
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-}
-.background .headerControl .location {
-  display: flex;
-  flex-direction: row;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
-.background .headerControl .location h2 {
-  font-size: 14px;
+.background .headers h2 {
+  font-weight: 500;
+  font-size: 32px;
 }
-.background .headerControl .location svg {
-  width: 16px;
-  height: 16px;
-}
-.background .headerControl .clockOpen {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-}
-.background .headerControl .clockOpen h2 {
-  font-size: 14px;
-}
-.background .headerControl .clockOpen svg {
-  width: 16px;
-  height: 16px;
-}
-.background .headerControl .phone {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-}
-.background .headerControl .phone h2 {
-  font-size: 14px;
-  text-decoration: none;
-}
-.background .headerControl .phone h2 a {
-  text-decoration: none;
-  color: #666666;
-}
-.background .headerControl .phone svg {
-  width: 16px;
-  height: 16px;
+.background .headers p {
+  font-size: 18px;
 }
 .background .control {
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding-top: 40px;
+  display: flex;
+  gap: 50px;
+}
+.background .control .leftside {
+  height: 510px;
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-.background .control .images {
+.background .control .leftside .border {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
   gap: 20px;
 }
-.background .control .images h1 {
-  font-size: 24px;
-  font-weight: 600;
-}
-.background .control .images h2 {
-  line-height: 25px;
-}
-.background .control .images img {
-  width: 100%;
-  border-radius: 20px;
-}
-.background .control .texts {
-  width: 100%;
-  background-color: #f1f1f2;
-  padding: 28px 20px;
+.background .control .leftside .border .contactadress {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+}
+.background .control .leftside .border .contactadress h2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #524FD5;
+}
+.background .control .leftside .border .contactadress p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #201e8a;
+}
+.background .control .rightside {
+  width: 100%;
+}
+.background .control .rightside .iframe {
+  width: 100%;
+  height: 480px;
   border-radius: 20px;
-  gap: 50px;
-  justify-content: space-between;
-}
-.background .control .texts label {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 100%;
-}
-.background .control .texts label input {
-  background-color: transparent;
-  color: black;
-  border-radius: 10px;
-  outline: none;
-  padding: 14px 30px;
-  border: 1px solid rgb(203, 203, 203);
-}
-.background .control .texts .buttonControl {
-  display: flex;
-  width: 100%;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-.background .control .texts .buttonControl button {
-  background-color: #6e4eef;
-  color: white;
-  border-radius: 10px;
-  outline: none;
-  border: none;
-  padding: 13px 38px;
-}
-.background .control .texts .textArea {
-  width: 100%;
-}
-.background .control .texts .textArea textarea {
-  background-color: transparent;
-  color: black;
-  border-radius: 10px;
-  outline: none;
-  padding: 14px 30px;
-  border: 1px solid rgb(203, 203, 203);
-  max-height: 20vh;
-  width: 100%;
-}
-.background .maps {
-  margin-top: 42px;
-  margin-bottom: 30px;
-  width: 100%;
-  height: 300px;
-}
-.background .maps .map {
-  border-radius: 20px;
-  width: 100%;
-  height: 100%;
-}
-.background .maps h2 {
-  padding-top: 20px;
-  font-weight: 600;
 }
 
-@media (min-width: 768px) {
-  .background .headerControl {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
+@media (max-width: 992px) {
+  .background {
+    padding-top: 50px;
   }
-  .background .headerControl .location {
-    display: flex;
-    align-items: center;
+  .background .headers {
     gap: 10px;
   }
-  .background .headerControl .location h2 {
-    color: #666666;
+  .background .headers h2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25.2px;
   }
-  .background .headerControl .clockOpen {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  .background .headerControl .clockOpen h2 {
-    color: #666666;
-  }
-  .background .headerControl .phone {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  .background .headerControl .phone h2 {
-    text-decoration: none;
-  }
-  .background .headerControl .phone h2 a {
-    text-decoration: none;
-    color: #666666;
+  .background .headers p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
   }
   .background .control {
-    padding-top: 88px;
-    padding-bottom: 88px;
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-  }
-  .background .control .images {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    width: 50%;
+    gap: 5px;
   }
-  .background .control .images h1 {
-    font-size: 48px;
-    font-weight: 600;
+  .background .control .leftside {
+    height: 430px;
+    gap: 10px;
   }
-  .background .control .images h2 {
-    line-height: 25px;
+  .background .control .leftside .border .contactadress h2 {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25.2px;
   }
-  .background .control .images img {
-    width: 100%;
-    border-radius: 20px;
+  .background .control .leftside .border .contactadress p {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 21px;
   }
-  .background .control .texts {
-    width: 100%;
-    background-color: #f1f1f2;
-    padding: 48px 70px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    border-radius: 20px;
-    justify-content: space-between;
+  .background .control .rightside .iframe {
+    height: 300px;
   }
-  .background .control .texts label {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 45%;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  .background .control .texts label input {
-    background-color: transparent;
-    color: black;
-    border-radius: 10px;
-    outline: none;
-    padding: 14px 30px;
-    border: 1px solid rgb(203, 203, 203);
+  to {
+    opacity: 1;
   }
-  .background .control .texts .buttonControl {
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-    align-items: flex-end;
-  }
-  .background .control .texts .buttonControl button {
-    background-color: #6e4eef;
-    color: white;
-    border-radius: 10px;
-    outline: none;
-    border: none;
-    padding: 13px 38px;
-  }
-  .background .control .texts .textArea {
-    width: 100%;
-  }
-  .background .control .texts .textArea textarea {
-    background-color: transparent;
-    color: black;
-    border-radius: 10px;
-    outline: none;
-    padding: 14px 30px;
-    border: 1px solid rgb(203, 203, 203);
-    max-height: 20vh;
-    width: 100%;
-  }
-  .background .maps {
-    margin-top: 12px;
-    padding-bottom: 48px;
-    width: 100%;
-    height: 500px;
-  }
-  .background .maps .map {
-    border-radius: 20px;
-    width: 100%;
-    height: 100%;
-  }
-  .background .maps h2 {
-    padding-top: 50px;
-    text-align: center;
-    font-size: 32px;
-    font-weight: 600;
-  }
+}
+.hidden {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.visible {
+  opacity: 1;
 }/*# sourceMappingURL=index.module.css.map */

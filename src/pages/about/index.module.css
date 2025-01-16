@@ -48,9 +48,10 @@
 }
 .background .control .leftside .experience {
   margin-top: 20px;
-  background-color: #f8f0d2;
+  background-color: black;
   padding: 40px 30px;
   border-radius: 20px;
+  color: white;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -69,7 +70,7 @@
 }
 .background .control .rightside .education {
   margin-top: 20px;
-  background-color: #e6deeb;
+  background-color: #ff0000;
   padding: 40px 30px;
   border-radius: 20px;
   display: flex;
@@ -85,7 +86,8 @@
 }
 .background .control .rightside .diplom {
   margin-top: 20px;
-  background-color: #dfeed7;
+  background-color: #ffcc00;
+  color: black;
   padding: 40px 30px;
   border-radius: 20px;
   display: flex;
@@ -124,6 +126,14 @@
   width: 100%;
   line-height: 25px;
 }
+.background .workPerson .controlWorkPerson .rightWork {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.background .workPerson .controlWorkPerson .rightWork hr {
+  border: 1px solid #6E4EEF;
+}
 .background .workPerson .controlWorkPerson .rightWork .controlRightWork {
   display: flex;
   align-items: center;
@@ -145,9 +155,13 @@
 }
 .background .images {
   padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 .background .images img {
   width: 100%;
+  height: auto;
 }
 .background .hospitalText {
   display: flex;
@@ -156,6 +170,7 @@
   flex-direction: column;
   gap: 10px;
   padding-top: 20px;
+  padding-bottom: 30px;
 }
 .background .hospitalText h2 {
   font-size: 24px;
@@ -169,14 +184,14 @@
 
 @media (min-width: 768px) {
   .aboutText {
-    padding-top: 80px;
+    padding-top: 40px;
     padding-bottom: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .aboutText h2 {
-    font-size: 64px;
+    font-size: 32px;
     font-weight: 600;
   }
   .background .control {
@@ -204,7 +219,8 @@
   }
   .background .control .leftside .experience {
     margin-top: 20px;
-    background-color: #f8f0d2;
+    background-color: black;
+    color: white;
     padding: 40px 30px;
     border-radius: 20px;
     display: flex;
@@ -224,8 +240,9 @@
   }
   .background .control .rightside .education {
     margin-top: 20px;
-    background-color: #e6deeb;
+    background-color: #ff0000;
     padding: 40px 30px;
+    color: white;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -240,7 +257,8 @@
   }
   .background .control .rightside .diplom {
     margin-top: 20px;
-    background-color: #dfeed7;
+    background-color: #ffcc00;
+    color: black;
     padding: 40px 30px;
     border-radius: 20px;
     display: flex;
@@ -262,7 +280,7 @@
     border-radius: 20px;
   }
   .background .workPerson {
-    padding-top: 140px;
+    padding-top: 60px;
   }
   .background .workPerson .controlWorkPerson {
     display: flex;
@@ -287,7 +305,7 @@
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
   }
   .background .workPerson .controlWorkPerson .rightWork .controlRightWork {
     display: flex;
@@ -314,10 +332,13 @@
   }
   .background .images {
     padding-top: 80px;
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
   .background .images img {
-    width: 100%;
+    width: 48%;
+    height: 33vh;
   }
   .background .hospitalText {
     display: flex;

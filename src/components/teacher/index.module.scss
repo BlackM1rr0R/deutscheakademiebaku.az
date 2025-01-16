@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background {
+    margin-top: 80px;
+
+    .teacher {
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 32px;
+        font-weight: 600;
+        color: black;
+        .german{
+            color: #ff0000;
+            font-size: 32px;
+        font-weight: 600;
+        }
+        .learn{
+            color: #ffcc00;
+            font-size: 32px;
+        font-weight: 600;
+        }
+    }
+
+    .control {
+        margin-top: 80px;
+
+        .price {
+           
+            .border {
+                margin-bottom: 50px;
+                .images {
+
+                    img {
+                        border-radius: 20px;
+                    }
+
+                    h1 {
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+
+                    h2 {
+                        animation: colorChange 3s infinite;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        color: #000;
+        /* Siyah */
+    }
+
+    33% {
+        color: #ff0000;
+        /* Kırmızı */
+    }
+
+    66% {
+        color: #ffcc00;
+        /* Sarı */
+    }
+
+    100% {
+        color: #000;
+        /* Siyah */
+    }
+}
+
+@media(max-width:498px){
+    .background{
+        .teacher {
+          
+            font-size: 14px;
+           
+            .german{
+              
+                font-size: 14px;
+           
+            }
+            .learn{
+              
+                font-size: 14px;
+        
+            }
+        } 
+        .control{
+            margin-top: 40px;
+        }
+    }
+}

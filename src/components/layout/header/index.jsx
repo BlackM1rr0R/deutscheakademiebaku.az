@@ -1,12 +1,9 @@
 import React, { useState } from "react";
 import styles from "./index.module.css";
 import Wrapper from "../../UI/wrapper/index";
-import Logo from "../../../assets/images/logoeternal.png";
+
 import { Sling as Hamburger } from "hamburger-react";
-import {
-  
-  InstagramIcon
-} from "../../../icons";
+import ScreenPhoto from '../../../assets/images/screen.png'
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -21,30 +18,23 @@ const Header = () => {
   };
 
   return (
-    <div className={styles.background}>
       <Wrapper>
+    <div className={styles.background}>
         <div className={styles.control}>
           <Link to={"/"} className={styles.images}>
-            <img src={Logo} alt="" />
-            <h2>ETERNAL</h2>
-            <h2>Sağlık Hizmetleri</h2>
+        
+            <h2>DEUTSCHE</h2>
+            <h2>AKADEMIE BAKU</h2>
           </Link>
           <div className={styles.services}>
-            <Link to={"/idiopatik"}>Randevu</Link>
-            <Link to={"/kifoz"}>Hizmetlerimiz</Link>
-            <Link to={"/about"}>Hakkımda</Link>
-            <Link to={"/serumlar"}>Serumlar</Link>
-            <Link to={"/gallery"}>Blog</Link>
-            <Link to={"/contact"}>Iletisim</Link>
+            <Link to={"/idiopatik"}>Kurslarımız</Link>
+            <Link to={"/service"}>Xidmətlərimiz</Link>
+            <Link to={"/about"}>Haqqımızda</Link>
+        
+            <Link to={"/contact"}>Əlaqə</Link>
           </div>
-          <div className={styles.phoneHeader}>
-        <h1>ETERNAL</h1>
-        <h2>Sağlık Hizmetleri</h2>
-          </div>
-          <Link to={"https://www.instagram.com/sakaryaevdesaglik.esh/"} className={styles.icons}>
-            <InstagramIcon />
        
-          </Link>
+          <Link className={styles.buttonClass}>Sosialda Biz</Link>
           <div className={styles.hamburger}>
             <Hamburger
               size={22}
@@ -57,23 +47,17 @@ const Header = () => {
         {isMenuOpen && (
           <div className={styles.overlay}>
             <div className={styles.services}>
-              <Link to={"/about"} onClick={closeMenu}>Hakkımda</Link>
-              <Link to={"/idiopatik"} onClick={closeMenu}>Randevu</Link>
-              <Link to={"/kifoz"} onClick={closeMenu}>Hizmetlerimiz</Link>
-              <Link to={"/serumlar"}>Serumlar</Link>
-              <Link to={"/gallery"} onClick={closeMenu}>Blog</Link>
-              <Link to={"/contact"} onClick={closeMenu}>Iletisim</Link>
+            <Link to={"/idiopatik"}>Kurslarımız</Link>
+            <Link to={"/service"}>Xidmətlərimiz</Link>
+            <Link to={"/about"}>Haqqımızda</Link>
+            <Link to={"/contact"}>Əlaqə</Link>
             </div>
-            <Link to={"https://www.instagram.com/sakaryaevdesaglik.esh/"} className={styles.icons}>
-       
-              <InstagramIcon />
-          
-             
-            </Link>
+            <Link className={styles.buttonClass}>Sosialda Biz</Link>
           </div>
         )}
-      </Wrapper>
+         
     </div>
+      </Wrapper>
   );
 };
 

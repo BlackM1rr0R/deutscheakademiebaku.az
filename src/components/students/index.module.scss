@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.background{
+    margin-top: 80px;
+    .header{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        h1{
+            color: #515158;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        h2{
+            color: #524FD5;
+            font-size: 32px;
+            font-weight: 600;
+        }
+    }
+    .control{
+        margin-top: 50px;
+        .price{
+            .border{
+                .images{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .leftSide{
+                        img{
+                            border-radius: 20px;
+                        }
+                    }
+                    .rightSide{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        h1{
+                            font-size: 24px;
+                            font-weight: 600;
+                        }
+                        h2{
+                            color: #515158;
+                            font-weight: 500;
+                        }
+                        p{
+                            font-weight: 500;
+                            font-size: 24px;
+                            width: 900px;
+                        
+                            line-height: 36px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:498px){
+    .background{
+        .header{
+            h2{
+                font-size: 20px;
+            }
+        }
+        .control{
+            .price{
+                .border{
+                    .images{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                        .leftSide{
+                         img{
+                            border-radius: 20px;
+                         }
+                        }
+                        .rightSide{
+                            padding-top: 10px;
+                            p{
+                                width: 100%;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

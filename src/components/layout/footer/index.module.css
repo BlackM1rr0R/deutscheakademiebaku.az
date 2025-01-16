@@ -5,12 +5,11 @@
 }
 
 .background {
-  margin-top: 50px;
-  padding-bottom: 20px;
-  background-color: #f9f9f8;
-}
-.background .hr hr {
-  border: 0.5px solid rgba(199, 199, 199, 0.37);
+  background-color: #f3f0ff;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 40px;
 }
 .background .control {
   display: flex;
@@ -86,9 +85,8 @@
 
 @media (min-width: 768px) {
   .background {
-    margin-top: 80px;
+    margin-top: 40px;
     padding-bottom: 80px;
-    background-color: #f9f9f8;
   }
   .background .control {
     display: flex;

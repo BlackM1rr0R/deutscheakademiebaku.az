@@ -6,4 +6,4 @@ const Wrapper = (props) => {
   )
 }
 
-export default Wrapper
+export default Wrapper;

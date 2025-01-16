@@ -1,17 +1,20 @@
 .background {
   width: 90%;
+  background-color: white;
   margin: auto;
 }
 
 @media (min-width: 768px) {
   .background {
     width: 1440px;
+    background-color: white;
     margin: auto;
   }
 }
 @media (max-width: 498px) {
   .background {
     width: 90%;
+    background-color: white;
     margin: auto;
   }
 }/*# sourceMappingURL=index.module.css.map */

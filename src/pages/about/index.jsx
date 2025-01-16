@@ -1,13 +1,11 @@
 import React from "react";
 import styles from "./index.module.css";
-import Yusif from "../../assets/images/360photo.png";
-import YusifDiplom from "../../assets/images/360photo1.png";
 import Wrapper from "../../components/UI/wrapper";
-import DoctorPhoto from '../../assets/images/doctorpp1.avif'
-import DoctorPhoto1 from '../../assets/images/doctorpp2.avif'
-import DoctorPhoto2 from '../../assets/images/doctorpp3.jpg'
-import FillImage from '../../assets/images/360fill.png'
 import { Helmet } from "react-helmet-async";
+import Deutsche1 from "../../assets/images/deutsche1.png"
+import Deutsche2 from "../../assets/images/deutsche2.png"
+import Deutsche4 from "../../assets/images/deutsche4.png"
+import Deutsche5 from "../../assets/images/deutsche5.png"
 const About = () => {
   return (
     <>
@@ -25,72 +23,72 @@ const About = () => {
       </Helmet>
       <Wrapper>
         <div className={styles.aboutText}>
-          <h2>Hakkımızda</h2>
+          <h2>Haqqımızda</h2>
         </div>
         <div className={styles.background}>
           <div className={styles.control}>
             <div className={styles.leftside}>
               <div className={styles.header}>
-                <h2><h1>Eternal Sağlık </h1> İle Tanışın</h2>
+                <h2><h1>DAB</h1> İle Tanış Olun</h2>
               </div>
               <div className={styles.profilpicture}>
-                <img src={Yusif} alt="" />
+                <img src={Deutsche1} alt="" />
               </div>
               <div className={styles.experience}>
-                <h2>Misyonumuz</h2>
+                <h2>Hədəflərimiz</h2>
                 <p>
-                  ETERNAL SAĞLIK HİZMETLERİ olarak, uzman bir ekip tarafından sunulan kapsamlı yerinde bakım hizmetleri sunmaktayız. Ekibimiz, deneyimli doktorlar, hemşireler ve diğer sağlık profesyonellerinden oluşur ve her biri alanında uzmandır. Hastalarımızın ihtiyaçlarına özel olarak tasarlanan bakım planlarıyla, onların güvenliğini, konforunu ve sağlıklarını sağlamayı hedefliyoruz.
+                Biz, Deutsche Akademie Baku olaraq, Alman dili kursları və viza dəstəyi xidmətləri təqdim edirik. Komandamız, təcrübəli müəllimlər və məsləhətçilərdən ibarətdir, hər biri öz sahəsində ixtisaslaşmışdır. Məqsədimiz, tələbələrimizin dil öyrənmə prosesini sürətləndirmək və vizalarla bağlı bütün prosedurlarını asanlaşdırmaqdır.
                 </p>
               </div>
             </div>
             <div className={styles.rightside}>
               <div className={styles.education}>
-                <h2>Hakkımızda</h2>
+                <h2>Məmnunniyətimiz</h2>
                 <p>
 
-                  Müşteri memnuniyetine/deneyimine büyük önem veriyoruz ve her bir hastamızı ailemizin bir parçası gibi görüyoruz. İhtiyaçlarını anlamak, onları dinlemek ve gereksinimlerine göre uygun çözümler sunmak için bireysel bir yaklaşım benimsiyoruz. Her hasta için kişiselleştirilmiş bir bakım planı oluşturarak, onların özel gereksinimlerini karşılamak ve en uygun tedaviyi sağlamak için çalışıyoruz.
+                Bizim üçün ən önəmli prioritet tələbələrimizin məmnuniyyətidir. Deutsche Akademie Baku olaraq, göstərdiyimiz xidmətlərin keyfiyyətini və tələbələrimizin əldə etdiyi nəticələri davamlı olaraq izləyirik. Məqsədimiz, hər bir tələbəmizin dil öyrənmə prosesində özünü rahat və dəstəkli hiss etməsini təmin etməkdir.
                 </p>
               </div>
               <div className={styles.diplom}>
-                <h2>Vizyonumuz</h2>
+                <h2>Güvənliyimiz</h2>
                 <p>
-                  Eternal sağlık olarak, evde bakım hizmetlerimizi güvenilirlik, kalite ve etik değerlere dayandırıyoruz. Ekip olarak, her zaman en son tıbbi gelişmeleri takip ediyor ve en iyi uygulamaları kullanarak hastalarımıza en iyi bakımı sunmaya çalışıyoruz.
+                Bizim üçün məmnuniyyət qədər vacib olan digər bir amil güvəndir. Deutsche Akademie Baku olaraq, tələbələrimizin və müştərilərimizin bizə etibar etməsi üçün hər zaman güvənli və şəffaf xidmət göstəririk. Tədris prosesindən tutmuş viza dəstəyi xidmətlərinə qədər hər mərhələdə təhlükəsizlik və etibarlılığı təmin etmək bizim əsas vəzifələrimizdəndir.
                 </p>
               </div>
               <div className={styles.sertifikat}>
-                <img src={YusifDiplom} alt="" />
+                <img src={Deutsche2} alt="" />
               </div>
             </div>
           </div>
           <div className={styles.workPerson}>
             <div className={styles.controlWorkPerson}>
               <div className={styles.leftWork}>
-                <h1>ETERNAL Sağlık Yönetim Kurulumuz</h1>
-                <h2>Gücümüzün, operasyonlarımıza benzersiz değer katan çalışanlarımızdan geldiğini biliyoruz. Lider ekibimiz, evde sağlık hizmetlerinin kalitesini ve erişilebilirliğini artırmak için stratejik adımlar atarken, hastalarımızın ihtiyaçlarına en iyi şekilde cevap vermeyi hedeflemektedir..</h2>
+                <h1>Deutsche Akademie Baku İdarə Heyəti</h1>
+                <h2>Gücümüzün,xidmətlərimizə bənzərsiz dəyər qatan əməkdaşlarımızdan gəldiyini bilirik. Lider komandamız, Alman dili tədrisi və viza dəstəyi sahəsində keyfiyyəti və əlçatanlığı artırmaq üçün strateji addımlar ataraq, tələbələrimizin ehtiyaclarına ən yaxşı şəkildə cavab verməyi hədəfləyir. Əməkdaşlarımızın fədakar səyləri və peşəkar təcrübələri sayəsində tələbələrimizə ən yaxşı təhsil və dəstək xidmətlərini təqdim edirik.</h2>
               </div>
               <div className={styles.rightWork}>
                 <div className={styles.controlRightWork}>
-                  <img src={DoctorPhoto1} alt="" />
+                  {/* <img src={DoctorPhoto1} alt="" /> */}
                   <div className={styles.nameRight}>
-                    <h2>Dr. Hasan Arslan</h2>
+                    <h2>Senani B.</h2>
                     <h3>CEO</h3>
 
                   </div>
                 </div>
                 <hr />
                 <div className={styles.controlRightWork}>
-                  <img src={DoctorPhoto} alt="" />
+                  {/* <img src={DoctorPhoto} alt="" /> */}
                   <div className={styles.nameRight}>
-                    <h2>Dr. Selin Aydın</h2>
+                    <h2>Elçin A.</h2>
                     <h3>CEO Yardımcısı</h3>
 
                   </div>
                 </div>
                 <hr />
                 <div className={styles.controlRightWork}>
-                  <img src={DoctorPhoto2} alt="" />
+                  {/* <img src={DoctorPhoto2} alt="" /> */}
                   <div className={styles.nameRight}>
-                    <h2>Dr. Fatma Koç</h2>
+                    <h2>Tofiq A.</h2>
                     <h3>Genel Yönetim</h3>
 
                   </div>
@@ -100,12 +98,12 @@ const About = () => {
             </div>
           </div>
           <div className={styles.images}>
-            <img src={FillImage} alt="" />
+            <img src={Deutsche4} alt="" />
+            <img src={Deutsche5} alt="" />
           </div>
           <div className={styles.hospitalText}>
-            <h2>Sağlık hizmetinizi ayağınıza getirmek için buradayız.</h2>
-            <p>ETERNAL MEDLİNE GROUP.</p>
-            <p>Evinizde yalnız değilsin.</p>
+            <h2>Sizləri Almanyada ixtisaslı bir fərd olarağ görmək üçün buradayıq.</h2>
+        
           </div>
         </div>
       </Wrapper>

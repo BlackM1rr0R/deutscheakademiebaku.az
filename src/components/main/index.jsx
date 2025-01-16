@@ -1,51 +1,20 @@
-import React, { useState } from "react";
-import styles from "./index.module.css";
-import ScrollTrigger from "react-scroll-trigger";
-import CountUp from "react-countup";
-
-
+import React from 'react'
+import styles from './index.module.css'
+import ScreenPhoto from '../../assets/images/screen.png'
+import { Link } from 'react-router-dom'
 const Main = () => {
-  const [counterOn, setCounterOn] = useState(false);
-
-  return (
-    <>
- 
-    <div className={styles.background}>
-      <div className={styles.header}>
-        <h2>Uğurlarımız hakkında</h2>
-      </div>
-      <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
-        <div className={styles.control}>
-          <div className={styles.border1}>
-            <div className={styles.bordertext1}>
-              <h2>{counterOn && <CountUp duration={4} delay={0} end={15} />}</h2>
-              <p>Yıllık profesyonellik</p>
+    return (
+        <div className={styles.controlSide}>
+            <div className={styles.leftSide}>
+                <h2>A <h3>unique</h3> approach to learning foreign languages online</h2>
+                <p>Learn at your own pace,with lifetime access on mobile and desktop</p>
+                <Link>Əlaqə saxla</Link>
             </div>
-          </div>
-          <div className={styles.border2}>
-            <div className={styles.bordertext2}>
-              <h2>{counterOn && <CountUp duration={4} delay={0} end={937} />}+</h2>
-              <p>Ev sağlığı hizmeti</p>
+            <div className={styles.rightSide}>
+                <img src={ScreenPhoto} alt="" />
             </div>
-          </div>
-          <div className={styles.border3}>
-            <div className={styles.bordertext3}>
-              <h2>{counterOn && <CountUp duration={4} delay={0} end={10348} />}+</h2>
-              <p>İyileşen hastalarımız</p>
-            </div>
-          </div>
-          <div className={styles.border4}>
-            <div className={styles.bordertext4}>
-              <h2>{counterOn && <CountUp duration={4} delay={0} end={2} />}+</h2>
-              <p>Adresslerimiz</p>
-            </div>
-          </div>
         </div>
-      </ScrollTrigger>
-    </div>
-    </>
+    )
+}
 
-  );
-};
-
-export default React.memo(Main);
+export default Main
