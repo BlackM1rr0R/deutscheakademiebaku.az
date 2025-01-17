@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+.background {
+  margin-top: 170px;
+}
 .background .control {
   display: flex;
   flex-wrap: wrap;
