@@ -12,9 +12,9 @@ const Footer = () => {
           <div className={styles.line1}>
 
             <img src={DabLogo} alt="" />
-            <p>
-              Alman dilini bizim ilə öyrənin.
-            </p>
+            <h2 className={styles.h2}>
+              Alman dilini və Almanyaya gedişinizi bizim ilə açın.
+            </h2>
           </div>
           <div className={styles.line2}>
             <h2>Səhifələr</h2>

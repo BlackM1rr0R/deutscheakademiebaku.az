@@ -11,6 +11,7 @@
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 40px;
+  padding-bottom: 40px;
     .control {
       display: flex;
       flex-direction: column;
@@ -23,18 +24,15 @@
           width: 70px;
         }
   
-        h2 {
+        .h2 {
           padding-top: 20px;
           font-weight: 600;
-          font-size: 18px;
-          width: 80%;
+          font-size: 24px;
+          width: 300px;
+          line-height: 36px;
         }
   
-        p {
-          padding-top: 20px;
-          width: 80%;
-          font-size: 15px;
-        }
+     
       }
   
       .line2 {
@@ -55,6 +53,7 @@
           a {
             text-decoration: none;
             color: black;
+            font-weight: 600;
             font-size: 14px;
           }
         }
@@ -67,7 +66,7 @@
   
         h2 {
           color: #9d9da9;
-          font-size: 14px;
+          font-size: 18px;
         }
   
         ul {
@@ -78,7 +77,11 @@
           a {
             text-decoration: none;
             color: black;
+            font-weight: 600;
             font-size: 14px;
+          }
+          li{
+            font-weight: 600;
           }
         }
   
@@ -139,7 +142,8 @@
   
           h2 {
             color: #9d9da9;
-            font-size: 14px;
+            font-size: 18px;
+            font-weight: 600;
           }
   
           ul {
@@ -147,8 +151,10 @@
             flex-direction: column;
             gap: 20px;
   
-            li {
-              font-size: 17px;
+            a {
+              
+              font-size: 14px;
+              font-weight: 600;
             }
           }
         }
@@ -160,7 +166,8 @@
   
           h2 {
             color: #9d9da9;
-            font-size: 14px;
+            font-size: 18px;
+            font-weight: 600;
           }
   
           ul {
@@ -172,6 +179,11 @@
               text-decoration: none;
               color: black;
               font-size: 14px;
+              font-weight: 600;
+            }
+            a{
+              font-size: 14px;
+              font-weight: 600;
             }
           }
   

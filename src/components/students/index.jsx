@@ -21,6 +21,18 @@ const Students = () => {
             stuffe: "B2 course student",
             desc: "Bu kursu çox bəyəndim. Müəllimlər hər bir tələbəyə dəyər verərək, onların inkişafına xüsusi diqqət ayırdılar. Alman dili təhsilimi burada tamamladım və nəticələrdən çox məmnun qaldım. Hazırda Almaniyada Ausbildung proqramına qatılmışam və bu uğurumda kursun rolu böyükdür. Kursa göstərdikləri dəstəyə görə təşəkkür edirəm."
         },
+        {
+            img: StudentsPhoto,
+            title: "Senani Almaniya",
+            stuffe: "B2 course student",
+            desc: "Bu kursu çox bəyəndim. Müəllimlər hər bir tələbəyə dəyər verərək, onların inkişafına xüsusi diqqət ayırdılar. Alman dili təhsilimi burada tamamladım və nəticələrdən çox məmnun qaldım. Hazırda Almaniyada Ausbildung proqramına qatılmışam və bu uğurumda kursun rolu böyükdür. Kursa göstərdikləri dəstəyə görə təşəkkür edirəm."
+        },
+        {
+            img: StudentsPhoto,
+            title: "Senani Almaniya",
+            stuffe: "B2 course student",
+            desc: "Bu kursu çox bəyəndim. Müəllimlər hər bir tələbəyə dəyər verərək, onların inkişafına xüsusi diqqət ayırdılar. Alman dili təhsilimi burada tamamladım və nəticələrdən çox məmnun qaldım. Hazırda Almaniyada Ausbildung proqramına qatılmışam və bu uğurumda kursun rolu böyükdür. Kursa göstərdikləri dəstəyə görə təşəkkür edirəm."
+        },
     ]
     return (
         <div className={styles.background}>
@@ -61,7 +73,7 @@ const Students = () => {
                                 <div className={styles.images}>
                                     <div className={styles.leftSide}>
 
-                                        <img src={item.img} alt="" />
+                                        <img className={styles.image1} src={item.img} alt="" />
                                     </div>
                                     <div className={styles.rightSide}>
 
