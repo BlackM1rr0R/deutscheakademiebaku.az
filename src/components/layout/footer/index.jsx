@@ -1,17 +1,17 @@
 import React from "react";
 import styles from "./index.module.css";
 import Wrapper from "../../UI/wrapper/index";
-
+import DabLogo from '../../../assets/images/dablogo2.png'
 
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
-          <Wrapper>
-    <div className={styles.background}>
+    <Wrapper>
+      <div className={styles.background}>
         <div className={styles.control}>
           <div className={styles.line1}>
-           
-            <h2>DEUTSCHE AKADEMIE BAKU</h2>
+
+            <img src={DabLogo} alt="" />
             <p>
               Alman dilini bizim ilə öyrənin.
             </p>
@@ -20,22 +20,22 @@ const Footer = () => {
             <h2>Səhifələr</h2>
             <ul>
               <Link to={"/"}>Ana Səhifə</Link>
-              <Link to={"/idiopatik"}>Kurslarımız</Link>
-              <Link to={"/kifoz"}>Xidmətlərimiz</Link>
+              <Link to={"/course"}>Kurslarımız</Link>
+              <Link to={"/service"}>Xidmətlərimiz</Link>
               <Link to={"/about"}>Haqqımızda</Link>
-              <Link to={"/gallery"}>Əlaqə</Link>
+              <Link to={"/contact"}>Əlaqə</Link>
               <Link to={"/contact"}>Sosialda Biz</Link>
             </ul>
           </div>
           <div className={styles.line2}>
             <h2>Xidmətlər</h2>
             <ul>
-              <Link to={"/details/15"}>İş vizası</Link>
-              <Link to={"/details/16"}>Ausbildung</Link>
-              <Link to={"/details/17"}>Təhsil vizası</Link>
-              <Link to={"/details/18"}>Turist vizası</Link>
-               <Link to={"/serumlar"}>Visa dəstəyi</Link>
-              <Link to={"/details/19"}>SSS</Link>
+              <Link to={"/service"}>İş vizası</Link>
+              <Link to={"/service"}>Ausbildung</Link>
+              <Link to={"/service"}>Təhsil vizası</Link>
+              <Link to={"/service"}>Turist vizası</Link>
+              <Link to={"/service"}>Visa dəstəyi</Link>
+              <Link to={"/service"}>SSS</Link>
 
             </ul>
           </div>
@@ -46,11 +46,11 @@ const Footer = () => {
               <a href="tel:0552 518 96 54">0507487048</a>
 
             </ul>
-            
+
           </div>
         </div>
-    </div>
-      </Wrapper>
+      </div>
+    </Wrapper>
   );
 };
 

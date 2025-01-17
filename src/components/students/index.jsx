@@ -13,13 +13,13 @@ const Students = () => {
             img: StudentsPhoto,
             title: "Senani Almaniya",
             stuffe: "B2 course student",
-            desc: "Men bu kursu cox beyendim mellimler cox deyer verdi zad.Almanca oyrendim bitirdim ve cox beyendim.Tesekkur edirem bu kursa,Men bu kursu cox beyendim mellimler cox deyer verdi zad.Almanca oyrendim bitirdim ve cox beyendim.Tesekkur edirem bu kursa,Men bu kursu cox beyendim mellimler cox deyer verdi zad.Almanca oyrendim bitirdim ve cox beyendim.Tesekkur edirem bu kursa"
+            desc: "Bu kursda aldığım təhsil sayəsində Almaniyada iş tapmaqda böyük bir üstünlük qazandım. Alman dili biliklərim və peşə hazırlığım mənə burada iş mühitinə tez uyğunlaşmağa və uğurla çalışmağa imkan verdi. Kursun verdiyi biliklər və müəllimlərin dəstəyi, mənim karyeramın bu mərhələsinə çatmağımda əvəzsiz oldu. İndi Almaniyada işləyirəm və burada qazandığım təcrübə gələcəkdə daha böyük uğurlar üçün bir əsas yaradır. Bu imkana görə kursa sonsuz təşəkkürlər!"
         },
         {
             img: StudentsPhoto,
             title: "Senani Almaniya",
             stuffe: "B2 course student",
-            desc: "Men bu kursu cox beyendim mellimler cox deyer verdi zad.Almanca oyrendim bitirdim ve cox beyendim.Tesekkur edirem bu kursa,Men bu kursu cox beyendim mellimler cox deyer verdi zad.Almanca oyrendim bitirdim ve cox beyendim.Tesekkur edirem bu kursa,Men bu kursu cox beyendim mellimler cox deyer verdi zad.Almanca oyrendim bitirdim ve cox beyendim.Tesekkur edirem bu kursa"
+            desc: "Bu kursu çox bəyəndim. Müəllimlər hər bir tələbəyə dəyər verərək, onların inkişafına xüsusi diqqət ayırdılar. Alman dili təhsilimi burada tamamladım və nəticələrdən çox məmnun qaldım. Hazırda Almaniyada Ausbildung proqramına qatılmışam və bu uğurumda kursun rolu böyükdür. Kursa göstərdikləri dəstəyə görə təşəkkür edirəm."
         },
     ]
     return (

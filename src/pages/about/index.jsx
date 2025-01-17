@@ -10,14 +10,14 @@ const About = () => {
   return (
     <>
      <Helmet>
-        <title>Hakkımızda | ETERNAL Sağlık Hizmetleri</title>
+        <title>Haqqımızda | Deutsche Akademie Baku </title>
         <meta
           name="description"
-          content="ETERNAL Sağlık Hizmetleri hakkında daha fazla bilgi edinin. Sağlık sektöründe lider konumdayız."
+          content="Deutsche Akademie Baku haqqında məlumatlar."
         />
         <meta
           name="keywords"
-          content="Hakkımızda, ETERNAL Sağlık Hizmetleri, Sağlık, Klinik, Sağlık Hizmetleri"
+          content="Haqqımızda, Deutsche Akademie Baku"
         />
         <link rel="canonical" href="https://www.eternal.com/hakkimizda" />
       </Helmet>

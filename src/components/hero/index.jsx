@@ -8,18 +8,18 @@ const Hero = () => {
     const data=[
         {
             img:Logo1,
-            title:"Danışıq Klubu",
-            description:"Salam Necesen jdnasjdn ijdsnf jasfndj  ais"
+            title:"Danışıq klubu",
+            description:"Həftədə 2 dəfə danışıq klubları."
         },
         {
             img:Logo2,
-            title:"Danışıq Klubu",
-            description:"Salam Necesen jdnasjdn ijdsnf jasfndj  ais"
+            title:"Müsahibəyə hazırlıq",
+            description:"Müəllim tərəfindən müsahibələrə hazırlıq."
         },
         {
             img:Logo3,
-            title:"Danışıq Klubu",
-            description:"Salam Necesen jdnasjdn ijdsnf jasfndj  ais"
+            title:"Sənədlərin yığımı Klubu",
+            description:"Komandamız tərəfindən sənədlərin yığımı."
         },
     ]
     return (

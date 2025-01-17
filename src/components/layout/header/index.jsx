@@ -4,6 +4,8 @@ import Wrapper from "../../UI/wrapper/index";
 
 import { Sling as Hamburger } from "hamburger-react";
 import ScreenPhoto from '../../../assets/images/screen.png'
+import DabLogo1 from '../../../assets/images/dablogo2.png'
+
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -23,11 +25,10 @@ const Header = () => {
         <div className={styles.control}>
           <Link to={"/"} className={styles.images}>
         
-            <h2>DEUTSCHE</h2>
-            <h2>AKADEMIE BAKU</h2>
+            <img src={DabLogo1} alt="" />
           </Link>
           <div className={styles.services}>
-            <Link to={"/idiopatik"}>Kurslarımız</Link>
+            <Link to={"/course"}>Kurslarımız</Link>
             <Link to={"/service"}>Xidmətlərimiz</Link>
             <Link to={"/about"}>Haqqımızda</Link>
         
@@ -47,7 +48,7 @@ const Header = () => {
         {isMenuOpen && (
           <div className={styles.overlay}>
             <div className={styles.services}>
-            <Link to={"/idiopatik"}>Kurslarımız</Link>
+            <Link to={"/course"}>Kurslarımız</Link>
             <Link to={"/service"}>Xidmətlərimiz</Link>
             <Link to={"/about"}>Haqqımızda</Link>
             <Link to={"/contact"}>Əlaqə</Link>

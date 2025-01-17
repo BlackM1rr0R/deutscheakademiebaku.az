@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './index.module.css';
+import { Link } from 'react-router-dom';
 
 const Faq = () => {
     const [activeTab, setActiveTab] = useState('');
@@ -23,7 +24,13 @@ const Faq = () => {
                         <h2>Alman dili dərslik pdfləri hardan tapa bilərəm?</h2>
                         <h1>{activeTab === 'materials' ? '-' : '+'}</h1>
                     </div>
-                    {activeTab === 'materials' && <p className={styles.activeP}>Materiallar haqqında məlumat:https://disk.yandex.ru/d/vwoHSvQpVHWrNg</p>}
+                    {activeTab === 'materials' && 
+                    <div className={styles.controlP}>
+
+                    <p className={styles.activeP}>Materiallar haqqında məlumat:</p>
+                    <a href='https://disk.yandex.ru/d/vwoHSvQpVHWrNg' className={styles.activeP}>Bütün Materiallar</a>
+                    </div>
+                    }
                 </div>
 
                 {/* Other tabs with similar structure */}
@@ -32,10 +39,16 @@ const Faq = () => {
                     className={`${styles.tab} ${activeTab === 'price' ? styles.activeButton : styles.button}`}
                 >
                     <div className={styles.quest}>
-                        <h2>Qiymət</h2>
+                        <h2>Kurs və viza qiymətləri</h2>
                         <h1>{activeTab === 'price' ? '-' : '+'}</h1>
                     </div>
-                    {activeTab === 'price' && <p>Qiymət haqqında məlumat</p>}
+                    {activeTab === 'price' && 
+                    <div className={styles.controlP}>
+
+                    <p className={styles.activeP}>Qiymət haqqında məlumat:</p>
+                    <Link to={"/course"} className={styles.activeP}>Bütün Xidmətlər</Link>
+                    </div>
+                    }
                 </div>
 
                 <div 
@@ -43,10 +56,16 @@ const Faq = () => {
                     className={`${styles.tab} ${activeTab === 'visum' ? styles.activeButton : styles.button}`}
                 >
                     <div className={styles.quest}>
-                        <h2>Viza</h2>
+                        <h2>Hansı vizalar düzəldilir?</h2>
                         <h1>{activeTab === 'visum' ? '-' : '+'}</h1>
                     </div>
-                    {activeTab === 'visum' && <p>Viza haqqında məlumat</p>}
+                    {activeTab === 'visum' && 
+                    <div className={styles.controlP}>
+
+                    <p className={styles.activeP}>Viza haqqında məlumat:</p>
+                    <Link to={"/service"} className={styles.activeP}>Bütün Vizalar</Link>
+                    </div>
+                    }
                 </div>
 
                 <div 
@@ -54,10 +73,16 @@ const Faq = () => {
                     className={`${styles.tab} ${activeTab === 'teacher' ? styles.activeButton : styles.button}`}
                 >
                     <div className={styles.quest}>
-                        <h2>Müəllim</h2>
+                        <h2>Qarantiya verilirmi?</h2>
                         <h1>{activeTab === 'teacher' ? '-' : '+'}</h1>
                     </div>
-                    {activeTab === 'teacher' && <p>Müəllim haqqında məlumat</p>}
+                    {activeTab === 'teacher' && 
+                    <div className={styles.controlP}>
+
+                    <p className={styles.activeP}>Haqqımızda oxuya bilərsiniz:</p>
+                    <Link className={styles.activeP} to={"/about"}>Bütün Məlumatlar</Link>
+                    </div>
+                    }
                 </div>
             </div>
         </div>

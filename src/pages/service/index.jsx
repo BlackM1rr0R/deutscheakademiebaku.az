@@ -1,9 +1,24 @@
 import React from 'react'
 import styles from './index.module.css'
 import Wrapper from '../../components/UI/wrapper'
+import { Helmet } from 'react-helmet-async'
 
 const Service = () => {
     return (
+        <>
+           <Helmet>
+                    <title>Vizalar | Deutsche Akademie Baku </title>
+                    <meta
+                      name="description"
+                      content="Deutsche Akademie Baku vizalar haqqında məlumatlar."
+                    />
+                    <meta
+                      name="keywords"
+                      content="Vizalar, Deutsche Akademie Baku"
+                    />
+                    <link rel="canonical" href="https://www.eternal.com/hakkimizda" />
+                  </Helmet>
+        
         <div className={styles.background}>
             <Wrapper>
 
@@ -126,6 +141,7 @@ const Service = () => {
             </Wrapper>
 
         </div>
+        </>
     )
 }
 

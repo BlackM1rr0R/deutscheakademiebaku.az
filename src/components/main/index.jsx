@@ -1,13 +1,13 @@
 import React from 'react'
 import styles from './index.module.css'
-import ScreenPhoto from '../../assets/images/screen.png'
+import ScreenPhoto from '../../assets/images/screenphoto3.png'
 import { Link } from 'react-router-dom'
 const Main = () => {
     return (
         <div className={styles.controlSide}>
             <div className={styles.leftSide}>
-                <h2>A <h3>unique</h3> approach to learning foreign languages online</h2>
-                <p>Learn at your own pace,with lifetime access on mobile and desktop</p>
+                <h2><h3>Alman</h3>dilini online və offline öyrənməyə unikal yanaşma</h2>
+                <p>DAB-ın təhsilli və mükəmməl komandası ilə tez bir zamanda Almanyada yaşıya,işləyə və təhsil ala bilərsiniz</p>
                 <Link>Əlaqə saxla</Link>
             </div>
             <div className={styles.rightSide}>

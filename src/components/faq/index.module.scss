@@ -73,10 +73,16 @@
                     font-size: 18px;
                 }
             }
-            .activeP{
-                margin-top: 10px;
-                color: white;
-                font-size: 20px;
+            .controlP{
+                padding-top: 15px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                .activeP{
+                    margin-top: 10px;
+                    color: white;
+                    font-size: 20px;
+                }
             }
         }
     }
@@ -97,11 +103,17 @@
             }
             .activeButton{
                 width: 100%;
+                .controlP{
+                    padding-top: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
                 .activeP{
-                   
+             
                     width: 100%;
                  
                 }
+            }
             }
            
         }
