@@ -1,20 +1,23 @@
-.controlSide{
+.controlSide {
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     background-color: #f3f0ff;
-border-radius: 20px;
-padding-top: 20px;
+    border-radius: 20px;
+    padding-top: 20px;
     padding-bottom: 20px;
-    .leftSide{
-        
+    margin-top: 150px;
+gap: 50px;
+    .leftSide {
+
         padding-left: 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 50px;
-       
-        h2{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        h2 {
             font-size: 48px;
             display: flex;
             flex-wrap: wrap;
@@ -22,46 +25,54 @@ padding-top: 20px;
             align-items: center;
             gap: 8px;
             font-weight: 600;
-            h3{
-             
+
+            h3 {
+
                 color: #524FD5;
                 font-weight: 600;
             }
         }
-        p{
+
+        p {
             width: 100%;
             color: #515158;
             line-height: 26px;
         }
-        a{
+
+        a {
             width: 130px;
-            background-color:#524FD5;
+            background-color: #524FD5;
             color: white;
             border-radius: 20px;
             padding: 10px 20px;
             text-decoration: none;
         }
     }
-    .rightSide{
+
+    .rightSide {
         display: flex;
-    img{
-        width: 100%;
-    }
+
+        img {
+            width: 100%;
+        }
     }
 }
-@media(min-width:768px){
-    .controlSide{
+
+@media(min-width:768px) {
+    .controlSide {
+
         display: flex;
         align-items: center;
         flex-direction: row;
         justify-content: space-between;
-        .leftSide{
+
+        .leftSide {
             padding-left: 20px;
-                display: flex;
-                flex-direction: column;
-                gap: 50px;
-           
-            h2{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+
+            h2 {
                 font-size: 48px;
                 display: flex;
                 flex-wrap: wrap;
@@ -69,20 +80,23 @@ padding-top: 20px;
                 align-items: center;
                 gap: 8px;
                 font-weight: 600;
-                h3{
-                 
+
+                h3 {
+
                     color: #524FD5;
                     font-weight: 600;
                 }
             }
-            p{
+
+            p {
                 width: 250px;
                 color: #515158;
                 line-height: 26px;
             }
-            a{
+
+            a {
                 width: 130px;
-                background-color:#524FD5;
+                background-color: #524FD5;
                 color: white;
                 border-radius: 20px;
                 padding: 10px 20px;

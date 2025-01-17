@@ -7,6 +7,8 @@
   border-radius: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
+  margin-top: 150px;
+  gap: 50px;
 }
 .controlSide .leftSide {
   padding-left: 20px;
