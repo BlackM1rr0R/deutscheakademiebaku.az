@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./index.module.css";
 import Wrapper from "../../UI/wrapper/index";
-import DabLogo from '../../../assets/images/dablogo2.png'
+import DabLogo from '../../../assets/images/delogo1.png'
 
 import { Link } from "react-router-dom";
 const Footer = () => {
@@ -43,7 +43,8 @@ const Footer = () => {
             <h2>Ünvan</h2>
             <ul>
               <li>Kesle qesebesi</li>
-              <a href="tel:0552 518 96 54">0507487048</a>
+              <a href="tel:+994993020102">+994993020102</a>
+              <a href="tel:+491777464647">+491777464647</a>
 
             </ul>
 

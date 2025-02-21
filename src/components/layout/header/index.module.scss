@@ -8,9 +8,7 @@
 
   .background {
     background-color: #f3f0ff;
-    position: fixed;
-    width: 90%;
-    top: 0;
+   
     padding-left: 20px;
     padding-right: 20px;
    border-radius: 20px;
@@ -126,7 +124,7 @@
       .images {
         gap: 2px;
         img {
-          width:50px;
+          width:70px;
         }
         h2{
           display: block;

@@ -108,6 +108,9 @@
     width: 350px;
     font-size: 15px;
   }
+  .background .control .line1 img {
+    width: 100px;
+  }
   .background .control .line2 {
     display: flex;
     flex-direction: column;

@@ -6,9 +6,9 @@ import { Helmet } from "react-helmet-async";
 const Contact = () => {
 
   const sections = [
-    { title: "Bizim ilə əlaqə", description: "Working Hours: 9AM - 6PM" },
-    { title: "Email", description: "hello@gmail.com, fax@gmail.com" },
-    { title: "Phone", description: "+994507487048" }
+    { title: "Bizim ilə əlaqə", description: "İş saatları: 09:00 - 18:00" },
+    { title: "Email", description: "deutscheakademiebaku@gmail.com" },
+    { title: "Telefon", description: "AZE:+994993020102, DE:+491777464647" }
   ];
 
   return (
@@ -17,13 +17,13 @@ const Contact = () => {
         <title>Bizim ilə əlaqə | DEUTSCHE Akademie Baku</title>
         <meta
           name="description"
-          content="ETERNAL Sağlık Hizmetleri ile iletişime geçmek için iletişim bilgilerimizi ve formumuzu kullanabilirsiniz."
+          content="Elaqe ucun biz."
         />
         <meta
           name="keywords"
-          content="İletişim, ETERNAL Sağlık Hizmetleri, İletişim Formu, Sağlık Hizmetleri, Bize Ulaşın"
+          content="Bizim ile elaqe saxlayin"
         />
-        <link rel="canonical" href="https://www.eternal.com/iletisim" />
+        
       </Helmet>
 
       <Wrapper>

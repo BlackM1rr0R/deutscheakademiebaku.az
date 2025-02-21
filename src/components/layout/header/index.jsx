@@ -4,7 +4,7 @@ import Wrapper from "../../UI/wrapper/index";
 
 import { Sling as Hamburger } from "hamburger-react";
 import ScreenPhoto from '../../../assets/images/screen.png'
-import DabLogo1 from '../../../assets/images/dablogo2.png'
+import DabLogo1 from '../../../assets/images/delogo1.png'
 
 import { Link } from "react-router-dom";
 

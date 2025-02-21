@@ -6,9 +6,6 @@
 
 .background {
   background-color: #f3f0ff;
-  position: fixed;
-  width: 90%;
-  top: 0;
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 20px;
@@ -103,7 +100,7 @@
     gap: 2px;
   }
   .background .control .images img {
-    width: 50px;
+    width: 70px;
   }
   .background .control .images h2 {
     display: block;

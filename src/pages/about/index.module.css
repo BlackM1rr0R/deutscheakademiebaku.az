@@ -5,7 +5,6 @@
 }
 
 .aboutText {
-  padding-top: 40px;
   padding-bottom: 40px;
   display: flex;
   justify-content: center;
@@ -16,10 +15,6 @@
   font-weight: 600;
 }
 
-.background {
-  padding-top: 30px;
-  margin-top: 100px;
-}
 .background .control {
   display: flex;
   flex-direction: column;
@@ -185,15 +180,19 @@
 
 @media (min-width: 768px) {
   .aboutText {
-    padding-top: 40px;
+    padding-top: 10px;
     padding-bottom: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 40px;
   }
   .aboutText h2 {
     font-size: 32px;
     font-weight: 600;
+  }
+  .background {
+    margin: 0;
   }
   .background .control {
     display: flex;
