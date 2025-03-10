@@ -5,53 +5,69 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import Teacher1 from '../../assets/images/teacher1.png'
-import Teacher2 from '../../assets/images/teacher2.png'
+import Tofig from '../../assets/images/tofig.jpeg'
+import Emil from '../../assets/images/emil.jpg'
+import Kamran from '../../assets/images/kamran.jpeg'
+import Elchin from '../../assets/images/elchin.jpeg'
 import Teacher3 from '../../assets/images/teacher3.png'
+import Hesen from '../../assets/images/hesen.jpeg'
+import Xaver from '../../assets/images/xaver.JPG'
+import Temra from '../../assets/images/temra.JPG'
+import Murad from '../../assets/images/murad.jpeg'
 import { Pagination, Scrollbar,Autoplay } from 'swiper/modules';
 const Teacher = () => {
     const data = [
         {
-            img: Teacher2,
-            title: "Samir Abdullayev",
-            language: "Alman Dili"
+            img: Tofig,
+            title: "Tofig Abdullayev",
+            language: "İcraçı Direktor"
         },
         {
-            img: Teacher2,
-            title: "Samir Abdullayev",
-            language: "Alman Dili"
+            img: Kamran,
+            title: "Kamran İsmayılzadə",
+            language: "Direktor"
         },
         {
-            img: Teacher3,
-            title: "Samir Abdullayev",
-            language: "Alman Dili"
+            img: Elchin,
+            title: "Elçin Abdullayev",
+            language: "CEO Köməkçisi"
         },
         {
-            img: Teacher3,
-            title: "Samir Abdullayev",
-            language: "Alman Dili"
+            img: Hesen,
+            title: "Həsən İsayev",
+            language: "SMM Manager"
         },
         {
-            img: Teacher3,
-            title: "Samir Abdullayev",
-            language: "Alman Dili"
+            img: Temra,
+            title: "Təmra Hüseynli",
+            language: "Operation Manager"
         },
         {
-            img: Teacher3,
-            title: "Samir Abdullayev",
-            language: "Alman Dili"
+            img: Murad,
+            title: "Murad Paşayev",
+            language: "Sales Manager"
+        },
+        {
+            img: Xaver,
+            title: "Xavər Zeynalova",
+            language: "Creative Manager"
+        },
+        {
+            img: Emil,
+            title: "Emil Əhmədov",
+            language: "Mühasibatçı"
         },
     ]
     return (
         <div className={styles.background}>
-            <h4 className={styles.teacher}>Müəllimlərimiz ilə <h4 className={styles.german}>Alman dilini</h4> <h4 className={styles.learn}>öyrənə bilərsiniz!</h4></h4>
+            <h4 className={styles.teacher}>DAB Ailəsinin <h4 className={styles.german}>Üzvləri ilə</h4> <h4 className={styles.learn}>Tanış olun!</h4></h4>
             <div className={styles.control}>
                 <Swiper
                    modules={[Pagination,Autoplay]}
                    className={styles.price}
                    spaceBetween={20}
                    slidesPerView={3}
-                   autoplay={{ delay: 2000, disableOnInteraction: false }}
+                   autoplay={{ delay: 4000, disableOnInteraction: false }}
                    pagination={{ clickable: true }}
            
                     onSwiper={(swiper) => console.log(swiper)}

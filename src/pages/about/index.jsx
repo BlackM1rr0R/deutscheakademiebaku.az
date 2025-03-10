@@ -70,7 +70,7 @@ const About = () => {
                 <div className={styles.controlRightWork}>
                   {/* <img src={DoctorPhoto1} alt="" /> */}
                   <div className={styles.nameRight}>
-                    <h2>Senani B.</h2>
+                    <h2>Sənani B.</h2>
                     <h3>CEO</h3>
 
                   </div>
@@ -80,7 +80,7 @@ const About = () => {
                   {/* <img src={DoctorPhoto} alt="" /> */}
                   <div className={styles.nameRight}>
                     <h2>Elçin A.</h2>
-                    <h3>CEO Yardımcısı</h3>
+                    <h3>CEO Köməkçisi</h3>
 
                   </div>
                 </div>
@@ -89,7 +89,7 @@ const About = () => {
                   {/* <img src={DoctorPhoto2} alt="" /> */}
                   <div className={styles.nameRight}>
                     <h2>Tofiq A.</h2>
-                    <h3>Genel Yönetim</h3>
+                    <h3>İcraçı Direktor</h3>
 
                   </div>
                 </div>

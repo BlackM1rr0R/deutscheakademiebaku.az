@@ -1,0 +1,154 @@
+/* Genel stiller */
+.background{
+  padding-top: 80px;
+  margin-bottom: 80px;
+  h1 {
+    font-size: 32px;
+    color: #524FD5;
+    margin-bottom: 30px;
+    font-weight: 600;
+  }
+}
+.news-container {
+  
+  padding: 20px;
+  background-color: #f4f4f9;
+  text-align: center;
+  border-radius: 10px;
+}
+
+
+
+/* Title'ı 2 satır ile sınırla */
+.title {
+  padding-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #222;
+  line-height: 20px;
+  margin-bottom: 8px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* Maksimum 2 satır */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+/* Açıklamayı 3 satır ile sınırla */
+.description {
+  padding-top: 10px;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* Maksimum 3 satır */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Eğer daha fazla gösteriliyorsa tam metni göster */
+.expanded {
+  -webkit-line-clamp: unset;
+  overflow: visible;
+}
+
+/* "Daha Fazla / Daha Az" butonu */
+/* "Mehr lesen / Weniger lesen" butonu */
+.readMore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(52, 132, 236);
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 10px auto; /* Otomatik margin ile ortala */
+  background-color: #f3f0ff;
+  font-weight: 600;
+  padding: 10px;
+  width: 150px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+
+.readMore:hover {
+  color: #ff4500;
+}
+
+/* Swiper kartları */
+.swiper-slide {
+  cursor: pointer;
+  min-height: 440px;
+  max-height: 481px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 10px;
+  margin-bottom: 50px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.swiper-slide:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.source,
+.date {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Responsive stiller */
+@media (max-width: 992px) {
+  .price {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .price {
+    gap: 10px;
+  }
+
+  .swiper-slide {
+    padding: 12px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .price {
+    gap: 5px;
+  }
+
+  .swiper-slide {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}

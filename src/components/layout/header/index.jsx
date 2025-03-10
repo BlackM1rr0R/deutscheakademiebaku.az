@@ -35,7 +35,7 @@ const Header = () => {
             <Link to={"/contact"}>Əlaqə</Link>
           </div>
        
-          <Link className={styles.buttonClass}>Sosialda Biz</Link>
+          <Link target="_blank" to={"https://www.instagram.com/deutsche_akademie_baku/"} className={styles.buttonClass}>Sosialda Biz</Link>
           <div className={styles.hamburger}>
             <Hamburger
               size={22}
@@ -53,7 +53,7 @@ const Header = () => {
             <Link to={"/about"}>Haqqımızda</Link>
             <Link to={"/contact"}>Əlaqə</Link>
             </div>
-            <Link className={styles.buttonClass}>Sosialda Biz</Link>
+            <Link target="_blank" to={"https://www.instagram.com/deutsche_akademie_baku/"} className={styles.buttonClass}>Sosialda Biz</Link>
           </div>
         )}
          

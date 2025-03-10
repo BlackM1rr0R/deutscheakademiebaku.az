@@ -49,7 +49,7 @@ const Contact = () => {
             <div className={styles.rightside}>
               <iframe
                 className={styles.iframe}
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d72032.50768923576!2d37.835549!3d55.653933!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab6f25a8fc615%3A0x4002efd7d787ef83!2sRynok%20Sadovod!5e0!3m2!1str!2saz!4v1718706271950!5m2!1str!2saz"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6076.443355934593!2d49.83290587690272!3d40.403939674404974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4030878a4e451229%3A0x5db5f75494a57d6!2s50C%20Mammad%20Araz%2C%20Baku!5e0!3m2!1str!2saz!4v1741616885596!5m2!1str!2saz"
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

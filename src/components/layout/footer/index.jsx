@@ -42,7 +42,9 @@ const Footer = () => {
           <div className={styles.line3}>
             <h2>Ünvan</h2>
             <ul>
-              <li>Kesle qesebesi</li>
+              <li>Bakı şəhəri,</li>
+              <li>Nərimanov Rayonu,</li>
+              <li>Məmməd Araz-50C</li>
               <a href="tel:+994993020102">+994993020102</a>
               <a href="tel:+491777464647">+491777464647</a>
 

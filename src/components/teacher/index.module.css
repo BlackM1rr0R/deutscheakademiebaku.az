@@ -34,7 +34,10 @@
   margin-bottom: 50px;
 }
 .background .control .price .border .images img {
+  width: 60%;
+  height: 300px;
   border-radius: 20px;
+  cursor: pointer;
 }
 .background .control .price .border .images h1 {
   padding-top: 5px;
@@ -76,5 +79,8 @@
   }
   .background .control {
     margin-top: 40px;
+  }
+  .background .control .price .border .images img {
+    width: 90%;
   }
 }/*# sourceMappingURL=index.module.css.map */

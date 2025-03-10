@@ -31,6 +31,8 @@
   justify-content: space-between;
 }
 .background .control .price .border .images .leftSide img {
+  width: 400px;
+  height: 500px;
   border-radius: 20px;
 }
 .background .control .price .border .images .rightSide {
@@ -64,6 +66,7 @@
     justify-content: flex-start;
   }
   .background .control .price .border .images .leftSide img {
+    width: 100%;
     border-radius: 20px;
   }
   .background .control .price .border .images .rightSide {
@@ -72,5 +75,6 @@
   .background .control .price .border .images .rightSide p {
     width: 100%;
     font-size: 20px;
+    margin-bottom: 50px;
   }
 }/*# sourceMappingURL=index.module.css.map */

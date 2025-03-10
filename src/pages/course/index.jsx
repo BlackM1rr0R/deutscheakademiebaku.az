@@ -52,7 +52,7 @@ const Course = () => {
             dokument:"Sənədlərin yığılması",
             support:"Viza dəstəyi",
             hous:"Ev ilə təmin olunma",
-            price:"2000 Euro",
+            price:"2500 Euro",
         },
         {
             img:StudentIcon,
@@ -61,7 +61,7 @@ const Course = () => {
             interview:"Universitet ilə müsahibə",
             dokument:"Sənədlərin yığılması",
             support:"Viza dəstəyi",
-            hous:"Ev ilə təmin olunma",
+            hous:"Ev ilə təmin olunma yoxdur.",
             price:"1500 Euro",
         },
         {
@@ -72,7 +72,7 @@ const Course = () => {
             dokument:"Sənədlərin yığılması",
             support:"Viza dəstəyi",
             hous:"Ev ilə təmin olunma",
-            price:"900 Euro",
+            price:"1500 Euro",
         },
         {
             img:FamilyIcon,
@@ -81,8 +81,8 @@ const Course = () => {
             interview:"Almaniya ilə razılıq",
             dokument:"Sənədlərin yığılması",
             support:"Viza dəstəyi",
-            hous:"Ev ilə təmin olunma",
-            price:"800 Euro",
+            hous:"Ev ilə təmin olunma yoxdur.",
+            price:"1700 Euro",
         },
         {
             img:Weiterbildung,
@@ -92,7 +92,7 @@ const Course = () => {
             dokument:"Sənədlərin yığılması",
             support:"Viza dəstəyi",
             hous:"Ev ilə təmin olunma",
-            price:"1000 Euro",
+            price:"2000 Euro",
         },
         {
             img:TouristIcon,
@@ -101,8 +101,8 @@ const Course = () => {
             interview:"Schengen vizanın alınmağı",
             dokument:"Sənədlərin yığılması",
             support:"Viza dəstəyi",
-            hous:"Ev ilə təmin olunma",
-            price:"400 Euro",
+            hous:"Ev ilə təmin olunma yoxdur.",
+            price:"500 Euro",
         },
     ]
   return (

@@ -28,7 +28,7 @@ const Faq = () => {
                     <div className={styles.controlP}>
 
                     <p className={styles.activeP}>Materiallar haqqında məlumat:</p>
-                    <a href='https://disk.yandex.ru/d/vwoHSvQpVHWrNg' className={styles.activeP}>Bütün Materiallar</a>
+                    <a target='_blank' href='https://disk.yandex.ru/d/-nlGoKSOG9247Q' className={styles.activeP}>Bütün Materiallar</a>
                     </div>
                     }
                 </div>

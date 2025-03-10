@@ -1,6 +1,9 @@
 import React from 'react'
 import styles from './index.module.css'
 import StudentsPhoto from "../../assets/images/students.png"
+import TofigViza from "../../assets/images/tofigviza.jpeg"
+import NiyaziViza from "../../assets/images/niyaziviza.jpeg"
+import SamayaViza from "../../assets/images/samayaviza.jpeg"
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -10,36 +13,31 @@ import { Pagination, Scrollbar, Autoplay } from 'swiper/modules';
 const Students = () => {
     const data = [
         {
-            img: StudentsPhoto,
-            title: "Senani Almaniya",
+            img: TofigViza,
+            title: "Tofig Abdullayev",
             stuffe: "B2 course student",
-            desc: "Bu kursda aldığım təhsil sayəsində Almaniyada iş tapmaqda böyük bir üstünlük qazandım. Alman dili biliklərim və peşə hazırlığım mənə burada iş mühitinə tez uyğunlaşmağa və uğurla çalışmağa imkan verdi. Kursun verdiyi biliklər və müəllimlərin dəstəyi, mənim karyeramın bu mərhələsinə çatmağımda əvəzsiz oldu. İndi Almaniyada işləyirəm və burada qazandığım təcrübə gələcəkdə daha böyük uğurlar üçün bir əsas yaradır. Bu imkana görə kursa sonsuz təşəkkürlər!"
+            desc: "Deutsche Akademie Baku sayəsində Almaniyada Ausbildung tapdım və orada işləyirəm. Alman dili biliklərim və peşə təlimim mənə iş mühitinə tez uyğunlaşmağa və uğurla çalışmağa imkan verdi. Ausbildung zamanı əldə etdiyim biliklər və təlimçilərin dəstəyi mənim karyeramın bu mərhələsinə çatmağımda əvəzsiz oldu. Bu imkana görə Deutsche Akademie Baku'ya sonsuz təşəkkürlər!"
         },
         {
-            img: StudentsPhoto,
-            title: "Senani Almaniya",
-            stuffe: "B2 course student",
-            desc: "Bu kursu çox bəyəndim. Müəllimlər hər bir tələbəyə dəyər verərək, onların inkişafına xüsusi diqqət ayırdılar. Alman dili təhsilimi burada tamamladım və nəticələrdən çox məmnun qaldım. Hazırda Almaniyada Ausbildung proqramına qatılmışam və bu uğurumda kursun rolu böyükdür. Kursa göstərdikləri dəstəyə görə təşəkkür edirəm."
+            img: NiyaziViza,
+            title: "Niyazi Pirəliyev",
+            stuffe: "B1 course student",
+            desc: "Bu kursu çox bəyəndim. Müəllimlər hər bir tələbəyə dəyər verərək, onların inkişafına xüsusi diqqət ayırdılar. Alman dili təhsilimi burada tamamladım və nəticələrdən çox məmnun qaldım. Hazırda Almaniyada LKW Fahrer olaraq işləyirəm və bu uğurumda kursun rolu böyükdür. Kursa göstərdikləri dəstəyə görə təşəkkür edirəm."
         },
         {
-            img: StudentsPhoto,
-            title: "Senani Almaniya",
+            img: SamayaViza,
+            title: "Fərəcova Səmayə",
             stuffe: "B2 course student",
-            desc: "Bu kursu çox bəyəndim. Müəllimlər hər bir tələbəyə dəyər verərək, onların inkişafına xüsusi diqqət ayırdılar. Alman dili təhsilimi burada tamamladım və nəticələrdən çox məmnun qaldım. Hazırda Almaniyada Ausbildung proqramına qatılmışam və bu uğurumda kursun rolu böyükdür. Kursa göstərdikləri dəstəyə görə təşəkkür edirəm."
-        },
-        {
-            img: StudentsPhoto,
-            title: "Senani Almaniya",
-            stuffe: "B2 course student",
-            desc: "Bu kursu çox bəyəndim. Müəllimlər hər bir tələbəyə dəyər verərək, onların inkişafına xüsusi diqqət ayırdılar. Alman dili təhsilimi burada tamamladım və nəticələrdən çox məmnun qaldım. Hazırda Almaniyada Ausbildung proqramına qatılmışam və bu uğurumda kursun rolu böyükdür. Kursa göstərdikləri dəstəyə görə təşəkkür edirəm."
-        },
+            desc: "İlk öncə burada Alman dili öyrəndim və dil biliyimi çox yaxşı səviyyəyə gətirdim. Müəllimlər hər bir tələbəyə xüsusi diqqət yetirərək, onların inkişafına dəstək oldular. Daha sonra şirkət məni Almaniyaya Studienvorbereitung və Sprachkurse proqramlarına göndərdi. Bu uğurumda kursun rolu çox böyükdür. Hər şey üçün kursa təşəkkür edirəm!"
+        }
+    
     ]
     return (
         <div className={styles.background}>
             <div className={styles.header}>
 
                 <h1>TOP STUDIYING</h1>
-                <h2>Tələbələrimizin sözləri</h2>
+                <h2>Viza və Sertifikat alan tələbələrimizin sözləri</h2>
             </div>
             <div className={styles.control}>
                 <Swiper
@@ -47,7 +45,7 @@ const Students = () => {
                     className={styles.price}
                     spaceBetween={20}
                     slidesPerView={1}
-                    autoplay={{ delay: 3000, disableOnInteraction: false }}
+                    autoplay={{ delay: 5000, disableOnInteraction: false }}
                     pagination={{ clickable: true }}
 
                     onSwiper={(swiper) => console.log(swiper)}

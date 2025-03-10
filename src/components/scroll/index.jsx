@@ -16,7 +16,7 @@ const Scroll = () => {
           <div className={styles.control}>
             <div className={styles.border1}>
               <div className={styles.bordertext1}>
-                <h2>{counterOn && <CountUp duration={4} delay={0} end={4} />}</h2>
+                <h2>{counterOn && <CountUp duration={4} delay={0} end={2} />}</h2>
                 <p>İllik Professionallıq</p>
               </div>
             </div>
@@ -34,7 +34,7 @@ const Scroll = () => {
             </div>
             <div className={styles.border4}>
               <div className={styles.bordertext4}>
-                <h2>{counterOn && <CountUp duration={4} delay={0} end={2} />}+</h2>
+                <h2>{counterOn && <CountUp duration={4} delay={0} end={1} />}+</h2>
                 <p>Adresslərimiz</p>
               </div>
             </div>
