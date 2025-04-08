@@ -17,11 +17,11 @@ const Home = () => {
         <title>Deutsche Akademie Baku</title>
         <meta
           name="description"
-          content="ETERNAL Sağlık Hizmetleri ile kolayca randevunuzu ayarlayın ve en iyi sağlık hizmetlerini deneyimleyin."
+          content="Almanya ausbildung yolu"
         />
         <meta
           name="keywords"
-          content="Randevu, Sağlık Hizmetleri, ETERNAL, Online Randevu, Klinik"
+          content="Alman dili baku"
         />
 
       </Helmet>

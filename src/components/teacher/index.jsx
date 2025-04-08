@@ -43,11 +43,6 @@ const Teacher = () => {
             language: "Operation Manager"
         },
         {
-            img: Murad,
-            title: "Murad Paşayev",
-            language: "Sales Manager"
-        },
-        {
             img: Xaver,
             title: "Xavər Zeynalova",
             language: "Creative Manager"
