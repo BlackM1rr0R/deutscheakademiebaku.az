@@ -26,7 +26,7 @@ const Teacher = () => {
         },
         {
             img: Aliya,
-            title: "Aliya Əbilova",
+            title: "Aliyə Abilova",
             language: "SMM"
         },
         {
