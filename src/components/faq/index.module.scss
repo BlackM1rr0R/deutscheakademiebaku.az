@@ -1,121 +1,101 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.background{
+
+.background {
     margin-top: 80px;
     padding-bottom: 80px;
-    .header{
-        display: flex;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.header h1 {
+    color: #515158;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.header h2 {
+    color: #524FD5;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.control {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.tab {
+    position: relative; /* bu eklendi */
+    width: 45%;
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 20px;
+    padding: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden; /* içeriğin dışarı taşmaması için */
+}
+.activeTab {
+    background-color: #524FD5;
+    color: white;
+}
+
+.quest {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quest h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: inherit;
+}
+
+.quest h1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: inherit;
+}
+
+/* Only show content when active */
+.content {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content p,
+.content a {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 498px) {
+    .control {
         flex-direction: column;
         gap: 20px;
-        h1{
-            color: #515158;
-            font-size: 12px;
-            font-weight: 600;
-        }
-        h2{
-            color: #524FD5;
-            font-size: 32px;
-            font-weight: 600;
-        }
     }
-    .control{
 
-        margin-top: 50px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 50px;
-      justify-content: space-between;
-        .button{
-            background-color: transparent;
-            border: 1px solid rgb(190, 190, 190);
-            width: 45%;
-            border-radius: 20px;
-            padding: 20px 20px;
-            .quest{
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                h2{
-                     font-weight: 600;
-                    font-size: 18px;
-                }
-                h1{
-                
-
-                    color: #524FD5;
-                    font-weight: 600;
-                    font-size: 18px;
-                }
-            }
-        }
-        .activeButton{
-            background-color:  #524FD5;;
-            width: 45%;
-            border-radius: 20px;
-            padding: 20px 20px;
-            .quest{
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                h2{
-                    color: white;
-                     font-weight: 600;
-                    font-size: 18px;
-                }
-                h1{
-                
-
-                    color: white;
-                    font-weight: 600;
-                    font-size: 18px;
-                }
-            }
-            .controlP{
-                padding-top: 15px;
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-                .activeP{
-                    margin-top: 10px;
-                    color: white;
-                    font-size: 20px;
-                }
-            }
-        }
+    .tab, .activeTab {
+        width: 100%;
     }
-}
-@media(max-width:498px){
-    .background{
-        .header{
-            h2{
-                font-size: 20px;
-            }
-           
-        }
-        .control{
-            .button{
-                width: 100%;
-        
-             
-            }
-            .activeButton{
-                width: 100%;
-                .controlP{
-                    padding-top: 10px;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 10px;
-                .activeP{
-             
-                    width: 100%;
-                 
-                }
-            }
-            }
-           
-        }
+
+    .header h2 {
+        font-size: 20px;
     }
 }

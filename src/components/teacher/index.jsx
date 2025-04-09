@@ -9,11 +9,8 @@ import Tofig from '../../assets/images/tofig.jpeg'
 import Emil from '../../assets/images/emil.jpg'
 import Kamran from '../../assets/images/kamran.jpeg'
 import Elchin from '../../assets/images/elchin.jpeg'
-import Teacher3 from '../../assets/images/teacher3.png'
-import Hesen from '../../assets/images/hesen.jpeg'
-import Xaver from '../../assets/images/xaver.JPG'
-import Temra from '../../assets/images/temra.JPG'
-import Murad from '../../assets/images/murad.jpeg'
+import Aliya from '../../assets/images/aliya.jpeg'
+
 import { Pagination, Scrollbar,Autoplay } from 'swiper/modules';
 const Teacher = () => {
     const data = [
@@ -28,24 +25,14 @@ const Teacher = () => {
             language: "Direktor"
         },
         {
+            img: Aliya,
+            title: "Aliya Əbilova",
+            language: "SMM"
+        },
+        {
             img: Elchin,
             title: "Elçin Abdullayev",
             language: "CEO Köməkçisi"
-        },
-        {
-            img: Hesen,
-            title: "Həsən İsayev",
-            language: "SMM Manager"
-        },
-        {
-            img: Temra,
-            title: "Təmra Hüseynli",
-            language: "Operation Manager"
-        },
-        {
-            img: Xaver,
-            title: "Xavər Zeynalova",
-            language: "Creative Manager"
         },
         {
             img: Emil,

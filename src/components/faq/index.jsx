@@ -16,73 +16,72 @@ const Faq = () => {
                 <h2>Suallara göz gəzdirin</h2>
             </div>
             <div className={styles.control}>
+                {/* Tab 1 */}
                 <div 
                     onClick={() => handleTabChange('materials')} 
-                    className={`${styles.tab} ${activeTab === 'materials' ? styles.activeButton : styles.button}`}
+                    className={`${styles.tab} ${activeTab === 'materials' ? styles.activeTab : ''}`}
                 >
                     <div className={styles.quest}>
                         <h2>Alman dili dərslik pdfləri hardan tapa bilərəm?</h2>
                         <h1>{activeTab === 'materials' ? '-' : '+'}</h1>
                     </div>
-                    {activeTab === 'materials' && 
-                    <div className={styles.controlP}>
-
-                    <p className={styles.activeP}>Materiallar haqqında məlumat:</p>
-                    <a target='_blank' href='https://disk.yandex.ru/d/-nlGoKSOG9247Q' className={styles.activeP}>Bütün Materiallar</a>
-                    </div>
-                    }
+                    {activeTab === 'materials' && (
+                        <div className={styles.content}>
+                            <p>Materiallar haqqında məlumat:</p>
+                            <a href='https://disk.yandex.ru/d/-nlGoKSOG9247Q' target='_blank' rel='noreferrer'>Bütün Materiallar</a>
+                        </div>
+                    )}
                 </div>
 
-                {/* Other tabs with similar structure */}
+                {/* Tab 2 */}
                 <div 
                     onClick={() => handleTabChange('price')} 
-                    className={`${styles.tab} ${activeTab === 'price' ? styles.activeButton : styles.button}`}
+                    className={`${styles.tab} ${activeTab === 'price' ? styles.activeTab : ''}`}
                 >
                     <div className={styles.quest}>
                         <h2>Kurs və viza qiymətləri</h2>
                         <h1>{activeTab === 'price' ? '-' : '+'}</h1>
                     </div>
-                    {activeTab === 'price' && 
-                    <div className={styles.controlP}>
-
-                    <p className={styles.activeP}>Qiymət haqqında məlumat:</p>
-                    <Link to={"/course"} className={styles.activeP}>Bütün Xidmətlər</Link>
-                    </div>
-                    }
+                    {activeTab === 'price' && (
+                        <div className={styles.content}>
+                            <p>Qiymət haqqında məlumat:</p>
+                            <Link to="/course">Bütün Xidmətlər</Link>
+                        </div>
+                    )}
                 </div>
 
+                {/* Tab 3 */}
                 <div 
                     onClick={() => handleTabChange('visum')} 
-                    className={`${styles.tab} ${activeTab === 'visum' ? styles.activeButton : styles.button}`}
+                    className={`${styles.tab} ${activeTab === 'visum' ? styles.activeTab : ''}`}
                 >
                     <div className={styles.quest}>
                         <h2>Hansı vizalar düzəldilir?</h2>
                         <h1>{activeTab === 'visum' ? '-' : '+'}</h1>
                     </div>
-                    {activeTab === 'visum' && 
-                    <div className={styles.controlP}>
-
-                    <p className={styles.activeP}>Viza haqqında məlumat:</p>
-                    <Link to={"/service"} className={styles.activeP}>Bütün Vizalar</Link>
-                    </div>
-                    }
+                    {activeTab === 'visum' && (
+                        <div className={styles.content}>
+                            <p>Viza haqqında məlumat:</p>
+                            <Link to="/service">Bütün Vizalar</Link>
+                        </div>
+                    )}
                 </div>
 
+                {/* Tab 4 */}
                 <div 
                     onClick={() => handleTabChange('teacher')} 
-                    className={`${styles.tab} ${activeTab === 'teacher' ? styles.activeButton : styles.button}`}
+                    className={`${styles.tab} ${activeTab === 'teacher' ? styles.activeTab : ''}`}
                 >
                     <div className={styles.quest}>
                         <h2>Qarantiya verilirmi?</h2>
                         <h1>{activeTab === 'teacher' ? '-' : '+'}</h1>
                     </div>
-                    {activeTab === 'teacher' && 
-                    <div className={styles.controlP}>
-
-                    <p className={styles.activeP}>Haqqımızda oxuya bilərsiniz:</p>
-                    <Link className={styles.activeP} to={"/about"}>Bütün Məlumatlar</Link>
-                    </div>
-                    }
+                    {activeTab === 'teacher' && (
+                        <div className={styles.content}>
+                            <p>Haqqımızda oxuya bilərsiniz:</p>
+                            <Link to="/about">Bütün Məlumatlar</Link>
+                        </div>
+                    )}
                 </div>
             </div>
         </div>

@@ -25,6 +25,9 @@
 .background .control {
   margin-top: 50px;
 }
+.background .control .price .border {
+  margin-bottom: 50px;
+}
 .background .control .price .border .images {
   display: flex;
   align-items: center;

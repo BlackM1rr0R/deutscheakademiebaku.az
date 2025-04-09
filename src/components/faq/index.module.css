@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -8,99 +9,93 @@
   margin-top: 80px;
   padding-bottom: 80px;
 }
-.background .header {
+
+.header {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.background .header h1 {
+
+.header h1 {
   color: #515158;
   font-size: 12px;
   font-weight: 600;
 }
-.background .header h2 {
+
+.header h2 {
   color: #524FD5;
   font-size: 32px;
   font-weight: 600;
 }
-.background .control {
+
+.control {
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 30px;
   justify-content: space-between;
 }
-.background .control .button {
-  background-color: transparent;
+
+.tab {
+  position: relative; /* bu eklendi */
+  width: 45%;
   border: 1px solid rgb(190, 190, 190);
-  width: 45%;
   border-radius: 20px;
-  padding: 20px 20px;
+  padding: 20px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden; /* içeriğin dışarı taşmaması için */
 }
-.background .control .button .quest {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.background .control .button .quest h2 {
-  font-weight: 600;
-  font-size: 18px;
-}
-.background .control .button .quest h1 {
-  color: #524FD5;
-  font-weight: 600;
-  font-size: 18px;
-}
-.background .control .activeButton {
+
+.activeTab {
   background-color: #524FD5;
-  width: 45%;
-  border-radius: 20px;
-  padding: 20px 20px;
+  color: white;
 }
-.background .control .activeButton .quest {
+
+.quest {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
-.background .control .activeButton .quest h2 {
-  color: white;
-  font-weight: 600;
+
+.quest h2 {
   font-size: 18px;
-}
-.background .control .activeButton .quest h1 {
-  color: white;
   font-weight: 600;
-  font-size: 18px;
+  color: inherit;
 }
-.background .control .activeButton .controlP {
-  padding-top: 15px;
+
+.quest h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: inherit;
+}
+
+/* Only show content when active */
+.content {
+  margin-top: 15px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.background .control .activeButton .controlP .activeP {
-  margin-top: 10px;
+
+.content p,
+.content a {
+  font-size: 16px;
   color: white;
-  font-size: 20px;
+  text-decoration: none;
 }
 
+/* Responsive */
 @media (max-width: 498px) {
-  .background .header h2 {
-    font-size: 20px;
-  }
-  .background .control .button {
-    width: 100%;
-  }
-  .background .control .activeButton {
-    width: 100%;
-  }
-  .background .control .activeButton .controlP {
-    padding-top: 10px;
-    display: flex;
+  .control {
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
   }
-  .background .control .activeButton .controlP .activeP {
+  .tab, .activeTab {
     width: 100%;
+  }
+  .header h2 {
+    font-size: 20px;
   }
 }/*# sourceMappingURL=index.module.css.map */
