@@ -29,7 +29,7 @@ const Home = () => {
         <Main />
         <Scroll />
         <Hero />
-        <Teacher />
+        {/* <Teacher /> */}
         <Students />
         <News />
         <Faq />
